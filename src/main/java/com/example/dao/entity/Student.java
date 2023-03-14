@@ -17,4 +17,6 @@ public class Student {
     private String name;
     @Column(name="age")
     private Integer age;
+    @Column(name="address")
+    private String address;
 }
