@@ -29,6 +29,9 @@ public class StudentController {
      */
     @RequestMapping("/query")
     public Result queryStudent(Long id){
+        if(id == null){
+            return ResultUtil.fail();
+        }
         try{
             Student student = studentService.queryStudent(id);
             return ResultUtil.success(student);
