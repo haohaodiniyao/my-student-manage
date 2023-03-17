@@ -19,6 +19,18 @@ public class ResultUtil {
     }
 
     /**
+     * 成功
+     * @return
+     */
+    public static Result success() {
+        Result result = new Result();
+        result.setErrCode(200);
+        result.setErrMsg("成功");
+        result.setData(null);
+        return result;
+    }
+
+    /**
      * 失败
      * @return
      */
@@ -26,7 +38,20 @@ public class ResultUtil {
         Result result = new Result();
         result.setErrCode(500);
         result.setErrMsg("失败");
-        result.setData((Object)null);
+        result.setData(null);
+        return result;
+    }
+
+    /**
+     * 失败
+     * @param errMsg
+     * @return
+     */
+    public static Result fail(String errMsg) {
+        Result result = new Result();
+        result.setErrCode(500);
+        result.setErrMsg(errMsg);
+        result.setData(null);
         return result;
     }
 }

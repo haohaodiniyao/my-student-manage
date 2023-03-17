@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
+ * 学生
  * 和数据库表一一对应
  */
 @Data
