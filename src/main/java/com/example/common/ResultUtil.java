@@ -1,7 +1,8 @@
 package com.example.common;
 
 /**
- * 返回结果工具类
+ * 返回结果
+ * 工具类
  */
 public class ResultUtil {
     /**

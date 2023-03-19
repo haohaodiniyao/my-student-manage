@@ -10,6 +10,10 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 public class MyStudentManageApplication {
 
+    /**
+     * 入口
+     * @param args
+     */
     public static void main(String[] args) {
         SpringApplication.run(MyStudentManageApplication.class, args);
     }

@@ -8,12 +8,3 @@ create table student
 )
     comment '学生表';
 
-create table teacher
-(
-    id     bigint auto_increment comment '主键；教师id'
-        primary key,
-    t_name varchar(50) not null comment '教师姓名',
-    t_age  int         null comment '教师年龄'
-)
-    comment '教师表';
-
