@@ -31,14 +31,14 @@ public class StudentController {
 
     //根据学生id，查询学生信息
     @GetMapping("/query")   //@GetMapping = @RequestMapping + get
-    public Student queryStudent(Long id){
-        Student student = null;
+    public Result queryStudent(Long id){
         try{
-            student = studentService.queryStudent(id);
+            Student student = studentService.queryStudent(id);
+            return ResultUtil.success(student);
         }catch (Exception e){
             //打印异常
             log.error("查询学生异常",e);
         }
-        return student;
+        return ResultUtil.fail();
     }
 }
